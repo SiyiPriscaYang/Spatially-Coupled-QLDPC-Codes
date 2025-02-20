@@ -13,7 +13,7 @@ Run sc_hgp_grade_ao_construction.cpp to construct SC-HGP codes of desired parame
     double w=25; // this is the weight of cycles 8, assuming cycles 6 are of weight 1
     int L1=10; 
     int L2=10; // L1 and L2 are coupling lengths of 2D-SC codes
-    double step=0.02;
+    double step=0.02; // this is the step size of the gradient descent algorithm used in GRADE
 ```
 
 Below is an example of output of AO optimization of partitioning matrices initialized by distribution optimized by GRADE:
