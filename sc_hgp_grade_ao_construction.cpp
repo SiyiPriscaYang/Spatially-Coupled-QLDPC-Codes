@@ -1,8 +1,3 @@
-//
-// Created by Siyi Yang on 1/3/24.
-//
-
-
 #include <iostream>
 #include <vector>
 #include <random>
