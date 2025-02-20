@@ -107,7 +107,7 @@ Check P1_uni ao // this is the code optimized by AO only (e.g., Code 2 in the pa
 ```
 
 # Write codes to .txt file
-If you have a pair of partitioning matrices at hand, run sc_generate_code.cpp to generate the 2D SC-HGP code and write it to .txt file.
+If you have a pair of partitioning matrices obtained from sc_hgp_grade_ao_construction.cpp, run sc_generate_code.cpp to generate the 2D SC-HGP code and write it to .txt file.
 
 Please replace line 34-44 with the paritioning matrices and the corresponding parameters, the example is as follows:
 ```
