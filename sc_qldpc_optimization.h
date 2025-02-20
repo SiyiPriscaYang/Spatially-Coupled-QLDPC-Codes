@@ -1,7 +1,3 @@
-//
-// Created by Siyi Yang on 1/2/24.
-//
-
 #ifndef QLDPC_SC_QLDPC_OPTIMIZATION_H
 #define QLDPC_SC_QLDPC_OPTIMIZATION_H
 
