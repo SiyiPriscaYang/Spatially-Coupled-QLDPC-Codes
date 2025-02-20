@@ -1,6 +1,111 @@
 # Spatially-Coupled-QLDPC-Codes
 Software that optimizes SC-HGP codes in https://arxiv.org/abs/2305.00137
 
+# Code Construction of SC-HGP codes
+Run sc_hgp_grade_ao_construction.cpp to construct SC-HGP codes of desired parameters. 
+
+Below is an example of output of AO optimization of partitioning matrices initialized by distribution optimized by AO:
+```
+P_init:
+0,8,3,0,5,2,2,6,0,1,6,7,4,2,1,8,6,8,6,0,7,
+3,0,7,6,1,1,5,2,8,8,0,6,0,8,0,4,7,6,6,2,2,
+3,38,
+4,65,
+compute the total start number
+n_cur start:
+50,70,10688,
+N_cur start=12438
+P_end:
+3,0,6,2,2,8,2,8,0,5,6,7,2,3,2,8,1,8,6,0,7,
+8,0,1,6,2,4,3,2,3,8,6,1,0,8,0,5,3,1,6,8,2,
+finished P_gd ao
+3,0,6,2,2,8,2,8,0,5,6,7,2,3,2,8,1,8,6,0,7,
+8,0,1,6,2,4,3,2,3,8,6,1,0,8,0,5,3,1,6,8,2,
+
+P_init:
+3,0,6,2,2,8,2,8,0,5,6,7,2,3,2,8,1,8,6,0,7,
+8,0,1,6,2,4,3,2,3,8,6,1,0,8,0,5,3,1,6,8,2,
+0,38,
+0,32,
+compute the total start number
+n_cur start:
+0,0,1596,
+N_cur start=1596
+P_end:
+3,0,6,2,2,8,2,8,0,5,6,7,2,3,2,8,1,8,6,0,7,
+8,0,1,6,2,4,3,2,3,8,6,1,0,8,0,5,3,1,6,8,2,
+check P_gd ao
+3,0,6,2,2,8,2,8,0,5,6,7,2,3,2,8,1,8,6,0,7,
+8,0,1,6,2,4,3,2,3,8,6,1,0,8,0,5,3,1,6,8,2,
+
+P_init:
+3,0,6,2,2,8,2,8,0,5,6,7,2,3,2,8,1,8,6,0,7,
+8,0,1,6,2,4,3,2,3,8,6,1,0,8,0,5,3,1,6,8,2,
+0,38,
+0,32,
+compute the total start number
+n_cur start:
+0,0,1596,
+N_cur start=1596
+P_end:
+3,0,6,2,2,8,2,8,0,5,6,7,2,3,2,8,1,8,6,0,7,
+8,0,1,6,2,4,3,2,3,8,6,1,0,8,0,5,3,1,6,8,2,
+check P1_gd ao
+3,0,6,2,2,8,2,8,0,5,6,7,2,3,2,8,1,8,6,0,7,
+8,0,1,6,2,4,3,2,3,8,6,1,0,8,0,5,3,1,6,8,2,
+```
+
+Below is an example of output of AO optimization of partitioning matrices initialized by uniform distribution:
+```
+P_init:
+1,6,2,3,0,0,8,4,7,3,1,5,1,6,4,8,2,7,5,7,4,
+1,5,6,7,4,2,5,8,8,0,4,2,4,0,7,1,6,1,7,3,3,
+3,56,
+8,59,
+compute the total start number
+n_cur start:
+40,110,19216,
+N_cur start=21966
+P_end:
+2,5,8,8,1,3,3,0,6,3,2,5,1,6,4,8,2,3,7,7,4,
+8,3,2,1,3,4,1,0,8,0,4,2,4,0,7,2,6,1,7,2,3,
+finished P_uni ao
+2,5,8,8,1,3,3,0,6,3,2,5,1,6,4,8,2,3,7,7,4,
+8,3,2,1,3,4,1,0,8,0,4,2,4,0,7,2,6,1,7,2,3,
+
+P_init:
+2,5,8,8,1,3,3,0,6,3,2,5,1,6,4,8,2,3,7,7,4,
+8,3,2,1,3,4,1,0,8,0,4,2,4,0,7,2,6,1,7,2,3,
+0,57,
+1,58,
+compute the total start number
+n_cur start:
+0,10,6388,
+N_cur start=6638
+P_end:
+2,0,8,8,1,3,3,0,6,3,2,5,1,6,6,8,2,6,7,2,4,
+4,3,2,1,3,4,5,0,8,0,4,2,6,0,7,0,6,2,7,2,4,
+Check P_uni ao
+2,0,8,8,1,3,3,0,6,3,2,5,1,6,6,8,2,6,7,2,4,
+4,3,2,1,3,4,5,0,8,0,4,2,6,0,7,0,6,2,7,2,4,
+
+P_init:
+2,0,8,8,1,3,3,0,6,3,2,5,1,6,6,8,2,6,7,2,4,
+4,3,2,1,3,4,5,0,8,0,4,2,6,0,7,0,6,2,7,2,4,
+0,46,
+0,52,
+compute the total start number
+n_cur start:
+0,0,2388,
+N_cur start=2388
+P_end:
+2,0,8,8,1,3,3,0,6,3,2,5,1,6,6,8,2,6,7,2,4,
+4,3,2,3,6,6,5,0,8,0,4,2,6,0,7,0,6,2,7,2,4,
+Check P1_uni ao
+2,0,8,8,1,3,3,0,6,3,2,5,1,6,6,8,2,6,7,2,4,
+4,3,2,3,6,6,5,0,8,0,4,2,6,0,7,0,6,2,7,2,4,
+```
+
 # Write codes to .txt file
 If you have a pair of partitioning matrices at hand, run sc_generate_code.cpp to generate the 2D SC-HGP code and write it to .txt file.
 
