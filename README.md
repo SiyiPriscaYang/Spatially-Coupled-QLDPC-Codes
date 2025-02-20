@@ -136,4 +136,13 @@ Please replace line 34-44 with the paritioning matrices and the corresponding pa
     int L1=10;
     int L2=10;
 ```
-
+# Attribution
+If you use this software in your research, please cite it as follows:
+```
+@misc{SpatiallyCoupledQLDPCCodes,
+  author = {Siyi Yang},
+  title = {Spatially {C}oupled {Q}{L}{D}{P}{C} Codes},
+  year = {2025},
+  howpublished = {\url{https://github.com/SiyiPriscaYang/Spatially-Coupled-QLDPC-Codes}},
+}
+```
