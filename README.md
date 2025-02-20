@@ -2,7 +2,7 @@
 Software that optimizes SC-HGP codes in https://arxiv.org/abs/2305.00137
 
 # Code Construction of SC-HGP codes
-Run sc_hgp_grade_ao_construction.cpp to construct SC-HGP codes of desired parameters. Please change the corresponding parameters in line 14-23:
+Run `sc_hgp_grade_ao_construction.cpp` to construct SC-HGP codes of desired parameters. Please change the corresponding parameters in line 14-23:
 ```
     int r1=3;
     int r2=3; 
@@ -119,7 +119,7 @@ Check P1_uni ao // this is the code optimized by AO only (e.g., Code 2 in the pa
 ```
 
 # Write codes to .txt file
-If you have a pair of partitioning matrices obtained from sc_hgp_grade_ao_construction.cpp, run sc_generate_code.cpp to generate the 2D SC-HGP code and write it to .txt file.
+If you have a pair of partitioning matrices obtained from `sc_hgp_grade_ao_construction.cpp`, run `sc_generate_code.cpp` to generate the 2D SC-HGP code and write it to .txt file.
 
 Please replace line 34-44 with the paritioning matrices and the corresponding parameters, the example is as follows:
 ```
