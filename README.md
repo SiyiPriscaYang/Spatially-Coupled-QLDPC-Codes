@@ -2,7 +2,19 @@
 Software that optimizes SC-HGP codes in https://arxiv.org/abs/2305.00137
 
 # Code Construction of SC-HGP codes
-Run sc_hgp_grade_ao_construction.cpp to construct SC-HGP codes of desired parameters. 
+Run sc_hgp_grade_ao_construction.cpp to construct SC-HGP codes of desired parameters. Please change the corresponding parameters in line 14-23:
+```
+    int r1=3;
+    int r2=3; 
+    int n1=7;
+    int n2=7; // (r1, n1) and (r2, n2) represent the dimensions of the component matrices that form the underlying hypergraph product codes
+    int m1=2;
+    int m2=2; // m1 and m2 are memories of 2D-SC codes
+    double w=25; // this is the weight of cycles 8, assuming cycles 6 are of weight 1
+    int L1=10; 
+    int L2=10; // L1 and L2 are coupling lengths of 2D-SC codes
+    double step=0.02;
+```
 
 Below is an example of output of AO optimization of partitioning matrices initialized by distribution optimized by GRADE:
 ```
