@@ -137,13 +137,3 @@ Please replace line 34-44 with the paritioning matrices and the corresponding pa
     int L2=10;
 ```
 
-# Attributions
-If you use this software in your research please cite as follows:
-```
-@software{SpatiallyCoupledQLDPCCodes,
-  author = Siyi Yang,
-  title = Spatially Coupled QLDPC Codes,
-  year = {2025},
-  url = {https://github.com/SiyiPriscaYang/Spatially-Coupled-QLDPC-Codes},
-}
-```
