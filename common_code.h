@@ -1,7 +1,3 @@
-//
-// Created by Siyi Yang on 1/2/24.
-//
-
 #ifndef QLDPC_COMMON_CODE_H
 #define QLDPC_COMMON_CODE_H
 
