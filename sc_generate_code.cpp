@@ -31,7 +31,7 @@ int main(int argc, char* argv[]) {
     vector<vector<int> > Code7_3_7{{4,10,3,12,13,1,5,7,8,8,11,7,11,3,1,6,12,3,2,0,15},{4,11,13,12,7,3,12,3,13,15,10,6,1,0,4,1,5,7,14,15,3}};
 
 
-    vector<vector<int> > P=Code2_3_7_2;
+    vector<vector<int> > P=Code2_3_7;
     string filename = "Code2_3_7.txt";
 
     int r1=3;
