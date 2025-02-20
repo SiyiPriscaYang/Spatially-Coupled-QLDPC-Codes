@@ -1,7 +1,3 @@
-//
-// Created by Siyi Yang on 1/2/24.
-//
-
 #ifndef QLDPC_TOOLS_H
 #define QLDPC_TOOLS_H
 
