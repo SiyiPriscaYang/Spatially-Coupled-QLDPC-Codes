@@ -4,15 +4,15 @@ Software that optimizes SC-HGP codes in https://arxiv.org/abs/2305.00137
 # Code Construction of SC-HGP codes
 Run sc_hgp_grade_ao_construction.cpp to construct SC-HGP codes of desired parameters. 
 
-Below is an example of output of AO optimization of partitioning matrices initialized by distribution optimized by AO:
+Below is an example of output of AO optimization of partitioning matrices initialized by distribution optimized by GRADE:
 ```
-P_init:
+P_init: // this is the partitioning matrices pair initialized by distribution optimizaed by GRADE
 0,8,3,0,5,2,2,6,0,1,6,7,4,2,1,8,6,8,6,0,7,
 3,0,7,6,1,1,5,2,8,8,0,6,0,8,0,4,7,6,6,2,2,
 3,38,
 4,65,
 compute the total start number
-n_cur start:
+n_cur start: // these are numbers of cycles 4, cycles 6, cycles 8 of the random code initialized by distribution optimized by GRADE (e.g. Code 4 in the paper)
 50,70,10688,
 N_cur start=12438
 P_end:
@@ -44,26 +44,26 @@ P_init:
 0,38,
 0,32,
 compute the total start number
-n_cur start:
-0,0,1596,
+n_cur start: // these are numbers of cycles 4, cycles 6, cycles 8 of the code optimized by GRADE-AO
+0,0,1596, 
 N_cur start=1596
 P_end:
 3,0,6,2,2,8,2,8,0,5,6,7,2,3,2,8,1,8,6,0,7,
 8,0,1,6,2,4,3,2,3,8,6,1,0,8,0,5,3,1,6,8,2,
-check P1_gd ao
+check P1_gd ao // this is the code optimized by GRADE-AO (e.g., Codes 1, 3, 5-7 in the paper)
 3,0,6,2,2,8,2,8,0,5,6,7,2,3,2,8,1,8,6,0,7,
 8,0,1,6,2,4,3,2,3,8,6,1,0,8,0,5,3,1,6,8,2,
 ```
 
 Below is an example of output of AO optimization of partitioning matrices initialized by uniform distribution:
 ```
-P_init:
+P_init: // this is the partitioning matrices pair initialized by uniform distribution
 1,6,2,3,0,0,8,4,7,3,1,5,1,6,4,8,2,7,5,7,4,
 1,5,6,7,4,2,5,8,8,0,4,2,4,0,7,1,6,1,7,3,3,
 3,56,
 8,59,
 compute the total start number
-n_cur start:
+n_cur start: // these are numbers of cycles 4, cycles 6, cycles 8 of the random code initialized by uniform distribution (e.g., Code 2 in the paper)
 40,110,19216,
 N_cur start=21966
 P_end:
@@ -95,13 +95,13 @@ P_init:
 0,46,
 0,52,
 compute the total start number
-n_cur start:
+n_cur start: // these are numbers of cycles 4, cycles 6, cycles 8 of the code optimized by AO only 
 0,0,2388,
 N_cur start=2388
 P_end:
 2,0,8,8,1,3,3,0,6,3,2,5,1,6,6,8,2,6,7,2,4,
 4,3,2,3,6,6,5,0,8,0,4,2,6,0,7,0,6,2,7,2,4,
-Check P1_uni ao
+Check P1_uni ao // this is the code optimized by AO only (e.g., Code 2 in the paper)
 2,0,8,8,1,3,3,0,6,3,2,5,1,6,6,8,2,6,7,2,4,
 4,3,2,3,6,6,5,0,8,0,4,2,6,0,7,0,6,2,7,2,4,
 ```
