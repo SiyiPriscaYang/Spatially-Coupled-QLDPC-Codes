@@ -1,5 +1,5 @@
 # Spatially-Coupled-QLDPC-Codes
-Software that optimizes SC-HGP codes in https://arxiv.org/abs/2305.00137
+Software that optimizes SC-HGP codes in [https://arxiv.org/abs/2305.00137](https://arxiv.org/pdf/2305.00137v4)
 
 # Code Construction of SC-HGP codes
 Run `sc_hgp_grade_ao_construction.cpp` to construct SC-HGP codes of desired parameters. Please change the corresponding parameters in line 14-23:
