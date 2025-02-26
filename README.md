@@ -143,7 +143,7 @@ You just need to assign this matrix to P in `sc_generate_code.cpp` as follows:
 ```
 # Attribution
 If you use this software in your research, please cite it the original paper as follows:
-
+```
 @article{yang2023quantum,
   title={Quantum spatially-coupled codes},
   author={Yang, Siyi and Calderbank, Robert},
