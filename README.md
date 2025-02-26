@@ -142,14 +142,8 @@ You just need to assign this matrix to P in `sc_generate_code.cpp` as follows:
     int L2=10;
 ```
 # Attribution
-If you use this software in your research, please cite it and the original paper as follows:
-```
-@misc{SpatiallyCoupledQLDPCCodes,
-  author = {Siyi Yang},
-  title = {Spatially {C}oupled {Q}{L}{D}{P}{C} Codes},
-  year = {2025},
-  howpublished = {\url{https://github.com/SiyiPriscaYang/Spatially-Coupled-QLDPC-Codes}},
-}
+If you use this software in your research, please cite it the original paper as follows:
+
 @article{yang2023quantum,
   title={Quantum spatially-coupled codes},
   author={Yang, Siyi and Calderbank, Robert},
